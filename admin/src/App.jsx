@@ -10,6 +10,7 @@ import AllApointments from './pages/Admin/AllApointments';
 import AddDoctor from './pages/Admin/AddDoctor';
 import DoctorsList from './pages/Admin/DoctorsList';
 
+
 const App = () => {
 
   const {aToken} = useContext(AdminContext)
