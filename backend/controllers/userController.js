@@ -86,7 +86,8 @@ import {v2 as cloudinary} from 'cloudinary'
 
  const updateProfile = async(req,res)=>{
     try {
-        const {userId,name,phone,address,dob,gender} = req.body
+        const {name,phone,address,dob,gender} = req.body
+        const userId = req.userId
         const imageFile = req.file
 
        if (!name || !phone || !dob || !gender) {

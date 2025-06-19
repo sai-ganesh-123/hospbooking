@@ -7,7 +7,6 @@ import { toast } from 'react-toastify'
 
 const MyProfile = () => {
 
-
 const {userData,setUserData,token,backendUrl,loadUserProfileData} = useContext(AppContext)
 
    const [isEdit,setIsEdit] = useState(false)
@@ -43,7 +42,6 @@ const {userData,setUserData,token,backendUrl,loadUserProfileData} = useContext(A
         toast.error(error.message)
        }
    }
-
 
   return userData && (
 
