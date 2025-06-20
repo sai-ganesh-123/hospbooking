@@ -73,7 +73,7 @@ const Login = () => {
         </div>
         <button type='submit' className='bg-primary text-white w-full py-2 rounded-md text-base'>{state==='Sign Up'?"Create Account":"Login"}</button>
         {
-          state === "Sign Up"? <p>Already have an account? <span onClick={()=>setState('Login')} className='text-primary underline cursor-pointer'>Login here</span> </p>:<p>Create an new account? <span onClick={()=>setState('Login')} className='text-primary underline cursor-pointer'>click here</span></p>
+          state === "Sign Up"? <p>Already have an account? <span onClick={()=>setState('Login')} className='text-primary underline cursor-pointer'>Login here</span> </p>:<p>Create an new account? <span onClick={()=>setState('Sign Up')} className='text-primary underline cursor-pointer'>click here</span></p>
         }
       </div>
     </form>
